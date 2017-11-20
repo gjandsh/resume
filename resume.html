@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_454326_ak5otr4asa960f6r.css">
+    <link rel="stylesheet" href="////at.alicdn.com/t/font_479969_jcdn91bhttpdgqfr.css">
+    <style>
+        ul,
+        li {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            box-sizing: border-box;
+            background-color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .layout {
+            width: 660px;
+            background-color: #fff;
+            margin: 0 auto;
+        }
+
+        .introduce {
+            position: relative;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            padding: 30px 40px;
+        }
+
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 30px;
+        }
+
+        .profile h1 {
+            font-size: 24px;
+            font-weight: normal;
+            margin: 0;
+        }
+
+        .profile p {
+            font-size: 12px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .contacts {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+        }
+
+        .contacts ul {
+            padding-right: 60px;
+        }
+
+        .contacts h3 {
+            font-size: 14px;
+            border-bottom: 4px solid
+        }
+
+        .contacts span {
+            font-size: 12px;
+        }
+
+        .contacts li span:nth-child(1) {
+            font-weight: bold;
+            display: inline-block;
+            width: 50px;
+        }
+
+        .heading {
+            width: 280px;
+            font-size: 14px;
+            border-bottom: 2px solid #ddd;
+            margin-left: 30px;
+            padding-bottom: 10px;
+        }
+
+        .dot {
+            height: 8px;
+            width: 8px;
+            background-color: #000;
+            border-radius: 50%;
+            margin-top: 4px;
+            position: relative;
+        }
+
+        .dot::before {
+            content: "";
+            border-left: 1px solid;
+            position: absolute;
+            padding-bottom: 110px;
+            left: 50%;
+            transform: translate(-0.5px, 8px);
+        }
+
+        .last::before {
+            padding-bottom: 65px;
+        }
+
+        .work .last::before {
+            padding-bottom: 40px;
+        }
+
+        .timeline li {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .abstract {
+            width: 540px;
+            font-size: 12px;
+            margin-right: 30px;
+        }
+
+        .abstract span:nth-child(2) {
+            color: #aaa;
+        }
+
+        .abstract p {
+            word-wrap: break-word;
+            word-break: break-all;
+        }
+
+        .work .abstract p {
+            margin-left: 10px;
+            color: #aaa
+        }
+
+        .abstract a {
+            color: #000;
+            font-weight: 700;
+        }
+
+        .education h4 {
+            font-weight: normal;
+            margin: 0;
+            color: #aaa;
+        }
+
+        .activities {
+            width: 310px;
+        }
+
+        .dot2 {
+            margin-left: 30px;
+            margin-top: -2px;
+        }
+
+
+        .skills {
+            margin-left: 5px;
+        }
+
+        .skills ul {
+            font-size: 12px;
+        }
+
+        .skills ul li {
+            display: flex;
+            align-items: center;
+            width: 120px;
+        }
+
+        .skills h4 {
+            margin: 0;
+        }
+
+        .skills li {
+            margin-bottom: 10px;
+            margin-left: 30px;
+        }
+
+        .skills .level {
+            display: flex;
+        }
+
+        .dot3 {
+            margin-right: 20px;
+        }
+
+        .skills li {
+            float: left;
+            margin-right: 50px;
+            padding-bottom: 20px;
+        }
+
+        .clearfix {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .other {
+            margin-top: -15px;
+        }
+
+        .other ul {
+            margin-left: 30px;
+        }
+
+        .other ul>li {
+            font-size: 14px;
+            padding-bottom: 10px
+        }
+
+        .other a {
+            color: #000;
+            margin-left: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="layout">
+        <div class="introduce">
+            <div class="profile">
+                <img src="//os5kf123g.bkt.clouddn.com/aaaavatar1.jpg" alt="#" class="avatar">
+                <div>
+                    <h1 class="name">郭婧</h1>
+                    <p class=title>求职意向：前端工程师</p>
+                </div>
+            </div>
+            <div class="contacts">
+                <h3>联系方式</h3>
+                <ul>
+                    <li>
+                        <span>城市</span>
+                        <span>杭州</span>
+                    </li>
+                    <li>
+                        <span>Tel</span>
+                        <span>188 5710 8430</span>
+                    </li>
+                    <li>
+                        <span>E-mail</span>
+                        <span>gandsh@126.com</span>
+                    </li>
+                    <li>
+                        <span>Github</span>
+                        <span>https://github.com/gjandsh</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="education">
+            <h2 class="heading">学习经历</h2>
+            <ol class="timeline">
+                <li>
+                    <div class="dot"></div>
+                    <div class="abstract">
+                        <span>云南大学/</span>
+                        <span>2008-2012</span>
+                        <h4>地球物理</h4>
+                        <p>本科期间曾多次获得奖学金，优秀学生、优秀班干等称号。大四时以专业第三的成绩保送研究生。
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="dot last"></div>
+                    <div class="abstract">
+                        <span>浙江大学 /</span>
+                        <span>2012-2015</span>
+                        <h4>建筑与土木工程</h4>
+                        <p>研究生期间因为需要用到一些编程语言来进行课题研究，在此过程中，产生了对编程的兴趣，并初步接触前端。
+                        </p>
+                    </div>
+                </li>
+            </ol>
+        </div>
+
+        <div class="work">
+            <h2 class="heading">作品（demos）</h2>
+            <div>
+                <ol class="timeline">
+                    <li>
+                        <div class="dot"></div>
+                        <div class="abstract">
+                            <span>时钟插件</span>
+                            <p>用原生JS与CSS实现的一个时钟小插件
+                                <a href="https://gjandsh.github.io/simpleclock/" target='_blank'>点我</a>
+                            </p>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dot"></div>
+                        <div class="abstract">
+                            <span>倒计时插件</span>
+                            <p>用原生JS与CSS做的一个倒计时
+                                <a href="https://gjandsh.github.io/countdown/" target='_blank'>点我</a>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dot"></div>
+                        <div class="abstract">
+                            <span>一些静态页面</span>
+                            <p>一个电影宣传页
+                                <a href="https://gjandsh.github.io/apageofstrangerthings/" target='_blank'>点我</a>
+                            </p>
+                            <p>一个企业宣传页（含轮播插件）
+                                <a href="https://gjandsh.github.io/a-page/" target='_blank'>点我</a>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dot last"></div>
+                        <div class="abstract">
+                            <span>一个登入框</span>
+                            <p>基于LeanCloud实现的一个登陆框，用到了jQuery
+                                <a href="https://gjandsh.github.io/loginbox/" target='_blank'>点我</a>
+                            </p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div class="skills">
+            <h2 class="heading">技能</h2>
+            <ul class='clearfix'>
+                <li>
+                    <div class="dot3">
+                        <i class="iconfont icon-cross"></i>
+                    </div>
+                    <h4>HTML&CSS</h4>
+                    <div class="level">
+                        <i class='iconfont icon-shuidi1'></i>
+                        <i class='iconfont icon-shuidi1'></i>
+                        <i class='iconfont icon-shuidi1'></i>
+                        <i class='iconfont icon-shuidi1'></i>
+                        <i class='iconfont icon-shuidi1'></i>
+                    </div>
+                </li>
+                <li>
+                    <div class="dot3">
+                        <i class="iconfont icon-cross"></i>
+                    </div>
+                    <h4>JAVASCRIPT</h4>
+                    <div class="level">
+                        <i class='iconfont icon-shuidi1'></i>
+                        <i class='iconfont icon-shuidi1'></i>
+                        <i class='iconfont icon-shuidi1'></i>
+                        <i class='iconfont icon-shuidi1'></i>
+                        <i class='iconfont icon-shuidi1'></i>
+                    </div>
+                </li>
+                <li>
+                    <div class="dot3">
+                        <i class="iconfont icon-cross"></i>
+                    </div>
+                    <h4>jQuery</h4>
+                    <div class="level">
+                        <i class='iconfont icon-shuidi1'></i>
+                        <i class='iconfont icon-shuidi1'></i>
+                        <i class='iconfont icon-shuidi1'></i>
+                        <i class='iconfont icon-shuidi1'></i>
+                    </div>
+                </li>
+                <li>
+                    <div class="dot3">
+                        <i class="iconfont icon-cross"></i>
+                    </div>
+                    <h4>AJAX</h4>
+                    <div class="level">
+                        <i class='iconfont icon-shuidi1'></i>
+                        <i class='iconfont icon-shuidi1'></i>
+                        <i class='iconfont icon-shuidi1'></i>
+                    </div>
+                </li>
+                <li>
+                    <div class="dot3">
+                        <i class="iconfont icon-cross"></i>
+                    </div>
+                    <h4>PHOTOSHOP</h4>
+                    <div class="level">
+                        <i class='iconfont icon-shuidi1'></i>
+                        <i class='iconfont icon-shuidi1'></i>
+                        <i class='iconfont icon-shuidi1'></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="other">
+            <h2 class="heading">了解更多</h2>
+            <ul>
+                <li>
+                    <i class='iconfont icon-book'></i>
+                    博客
+                    <a href="http://www.jianshu.com/u/2ea49692f0a5" target="_blank">http://www.jianshu.com/u/2ea49692f0a5</a>
+                </li>
+                <li>
+                    <i class='iconfont icon-github'></i>GitHub
+                    <a href="https://github.com/gjandsh" target="_blank">https://github.com/gjandsh?tab=repositories</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
